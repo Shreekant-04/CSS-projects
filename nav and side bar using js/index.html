@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,-25" />
+</head>
+<body>
+    <div>
+        <ul class="nav">
+            <li>Shree</li>
+            <li class="hideonmobile" >Home</li>
+            <li class="hideonmobile" >About</li>
+            <li class="hideonmobile" >Contact</li>
+            <li class="hideonmobile" >Resume</li>
+            <li class="hideondesktop" onclick="showsidebar()"><span class="material-symbols-outlined">menu</span></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><span class="material-symbols-outlined">close</span></li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Resume</li>
+        </ul>
+    </div>
+    
+</body>
+<script src="sidebar.js"></script>
+</html>

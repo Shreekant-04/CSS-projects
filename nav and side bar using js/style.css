@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(body-image.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+}
+.nav li{
+    padding: 20px;
+    height: 100%;
+
+}
+.nav li:first-child{
+    margin-right: auto;
+}
+.nav li:hover{
+    background-color: rgba(211, 211, 211, 0.425);
+}
+.sidebar{
+  
+    height: 100vh;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.137);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center ;
+    z-index: 999;
+}
+.sidebar li{
+    padding: 15px;
+    width: 100%;
+    margin: 10px;
+}
+/* .sidebar li:first-child{
+    margin-bottom: auto;
+} */
+.sidebar li:hover{
+    background-color: rgba(211, 211, 211, 0.425);
+
+}
+.hideondesktop{
+    display: none;
+}
+@media(max-width:800px){
+    .hideonmobile{
+        display: none;
+    }
+    .hideondesktop{
+        display: block;
+    }
+}
+@media (max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
